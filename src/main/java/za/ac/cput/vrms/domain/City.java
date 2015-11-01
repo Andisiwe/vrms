@@ -1,14 +1,20 @@
 package za.ac.cput.vrms.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 
 /**
  * Created by Andies on 2015-10-31.
  */
-
+@Entity
 public class City implements Serializable {
-    private String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String code;
     private String name;
 
@@ -22,20 +28,20 @@ public class City implements Serializable {
         this.name = builder.name;
     }
 
-    public String getId(){ return id;}
+    public Long getId(){ return id;}
 
     public String getCode(){ return code;}
 
     public String getName(){ return name;}
 
     public static class Builder{
-        private String id;
+        private Long id;
         private String code;
         private String name;
 
         public Builder(String name){this.name = name;}
 
-        public Builder id(String id){
+        public Builder id(Long id){
             this.id = id;
             return this;
         }

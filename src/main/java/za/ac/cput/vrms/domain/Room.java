@@ -1,16 +1,21 @@
 package za.ac.cput.vrms.domain;
 
+import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Andies on 2015-11-01.
  */
+@Entity
 public class Room implements Serializable {
-    private String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String type;
-    private List<Residence> residence = new ArrayList<>();
+    @OneToMany
+    @JoinColumn(name = "id")
+    private List<Residence> residences;
 
     public Room(){
 
@@ -19,10 +24,10 @@ public class Room implements Serializable {
     public Room(Builder builder){
         this.id = builder.id;
         this.type = builder.type;
-        this.residence = builder.residence;
+        this.residences = builder.residences;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
@@ -31,23 +36,23 @@ public class Room implements Serializable {
     }
 
     public List<Residence> getResidence() {
-        return residence;
+        return residences;
     }
 
     public static class Builder{
-        private String id;
+        private Long id;
         private String type;
-        private List<Residence> residence = new ArrayList<>();
+        private List<Residence> residences;
 
         public Builder(String type){this.type = type;}
 
-        public Builder id(String id){
+        public Builder id(Long id){
             this.id = id;
             return this;
         }
 
-        public Builder residence(List<Residence> residence){
-            this.residence = residence;
+        public Builder residence(List<Residence> residences){
+            this.residences = residences;
             return this;
         }
 

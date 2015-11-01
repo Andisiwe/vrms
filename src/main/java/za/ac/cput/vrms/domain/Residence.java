@@ -1,17 +1,22 @@
 package za.ac.cput.vrms.domain;
 
+import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Andies on 2015-11-01.
  */
+@Entity
 public class Residence implements Serializable {
-    private String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String name;
     private String town;
-    private List<City> city = new ArrayList<>();
+    @OneToMany
+    @JoinColumn(name = "id")
+    private List<City> cities;
 
     public Residence(){
 
@@ -21,10 +26,10 @@ public class Residence implements Serializable {
         this.id = builder.id;
         this.name = builder.name;
         this.town = builder.town;
-        this.city = builder.city;
+        this.cities = builder.cities;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
@@ -37,20 +42,20 @@ public class Residence implements Serializable {
     }
 
     public List<City> getCity() {
-        return city;
+        return cities;
     }
 
     public static class Builder {
-        private String id;
+        private Long id;
         private String name;
         private String town;
-        private List<City> city = new ArrayList<>();
+        private List<City> cities;
 
         public Builder(String name) {
             this.name = name;
         }
 
-        public Builder id(String id) {
+        public Builder id(Long id) {
             this.id = id;
             return this;
         }
@@ -60,8 +65,8 @@ public class Residence implements Serializable {
             return this;
         }
 
-        public Builder city(List<City> city) {
-            this.city = city;
+        public Builder city(List<City> cities) {
+            this.cities = cities;
             return this;
         }
 
@@ -69,7 +74,7 @@ public class Residence implements Serializable {
             this.id = residence.id;
             this.name = residence.name;
             this.town = residence.town;
-            this.city = residence.city;
+            this.cities = residence.cities;
             return this;
         }
 
