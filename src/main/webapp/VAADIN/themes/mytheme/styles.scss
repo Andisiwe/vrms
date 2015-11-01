@@ -1,0 +1,40 @@
+@import "addons.scss";
+@import "mytheme.scss";
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in mytheme.scss */
+.mytheme {
+  @include addons;
+
+  // Include mytheme theme styles in your theme
+  @include mytheme;
+
+  .labelstyle {
+    font-family: HelveticaRounded;
+    font-size: 60px;
+    font-style: normal;
+    color: orangered;
+    text-align: center;
+    height: 70px;
+    background-color: orange;
+  }
+
+  .heading{
+    font-size: 40px;
+    color: white;
+  }
+
+  .backcolor{
+    background-image: url("southpoint.jpg");
+    height: 100%;
+  }
+
+  .menu{
+    background-color: orange;
+    height: 40%;
+    width: 40%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+}
