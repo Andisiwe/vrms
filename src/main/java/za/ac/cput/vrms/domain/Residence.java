@@ -1,8 +1,10 @@
 package za.ac.cput.vrms.domain;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * Created by Andies on 2015-11-01.
@@ -11,26 +13,26 @@ import java.util.List;
 public class Residence implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long res_id;
     private String name;
     private String town;
-    @OneToMany
-    @JoinColumn(name = "id")
-    private List<City> cities;
+    //@OneToMany
+    //@JoinColumn(name = "city_id")
+    //private List<City> cities;
 
     public Residence(){
 
     }
 
     public Residence(Builder builder){
-        this.id = builder.id;
+        this.res_id = builder.res_id;
         this.name = builder.name;
         this.town = builder.town;
-        this.cities = builder.cities;
+       // this.cities = builder.cities;
     }
 
     public Long getId() {
-        return id;
+        return res_id;
     }
 
     public String getName() {
@@ -41,22 +43,22 @@ public class Residence implements Serializable {
         return town;
     }
 
-    public List<City> getCity() {
+   /* public List<City> getCity() {
         return cities;
-    }
+    }*/
 
     public static class Builder {
-        private Long id;
+        private Long res_id;
         private String name;
         private String town;
-        private List<City> cities;
+       // private List<City> cities;
 
         public Builder(String name) {
             this.name = name;
         }
 
         public Builder id(Long id) {
-            this.id = id;
+            this.res_id = id;
             return this;
         }
 
@@ -65,16 +67,16 @@ public class Residence implements Serializable {
             return this;
         }
 
-        public Builder city(List<City> cities) {
+       /* public Builder city(List<City> cities) {
             this.cities = cities;
             return this;
-        }
+        }*/
 
         public Builder copy(Residence residence){
-            this.id = residence.id;
+            this.res_id = residence.res_id;
             this.name = residence.name;
             this.town = residence.town;
-            this.cities = residence.cities;
+           // this.cities = residence.cities;
             return this;
         }
 

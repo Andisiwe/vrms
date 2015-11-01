@@ -14,7 +14,7 @@ import java.io.Serializable;
 public class City implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long city_id;
     private String code;
     private String name;
 
@@ -23,26 +23,26 @@ public class City implements Serializable {
     }
 
     public City(Builder builder){
-        this.id = builder.id;
+        this.city_id = builder.city_id;
         this.code = builder.code;
         this.name = builder.name;
     }
 
-    public Long getId(){ return id;}
+    public Long getId(){ return city_id;}
 
     public String getCode(){ return code;}
 
     public String getName(){ return name;}
 
     public static class Builder{
-        private Long id;
+        private Long city_id;
         private String code;
         private String name;
 
         public Builder(String name){this.name = name;}
 
         public Builder id(Long id){
-            this.id = id;
+            this.city_id = id;
             return this;
         }
 
