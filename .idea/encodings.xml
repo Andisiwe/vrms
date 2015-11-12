@@ -2,5 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/Security.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/SignInRequest.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/Visitor.java" charset="windows-1252" />
   </component>
 </project>
