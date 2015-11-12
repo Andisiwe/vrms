@@ -5,6 +5,7 @@ import java.io.Serializable;
 /**
  * Created by student on 2015/11/04.
  */
+
 public class Assign implements Serializable {
 
     private Long id;

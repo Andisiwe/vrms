@@ -1,5 +1,7 @@
 package za.ac.cput.vrms.domain;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import za.ac.cput.vrms.factories.StudentFactory;
 
 /**

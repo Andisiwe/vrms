@@ -1,10 +1,11 @@
-.homepagetheme{
-    @include reindeer;
-
-    .labelstyle{
-        font-family: HelveticaRounded;
-        font-size: 900px;
-        font-style: normal;
-        color: green;
+.homepagetheme {
+@include reindeer;
 }
+
+.labelstyle {
+    font-family: HelveticaRounded;
+    font-size: 900px;
+    font-style: normal;
+    color: green;
+
 }
