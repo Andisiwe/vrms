@@ -1,19 +1,24 @@
 package za.ac.cput.vrms.domain;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by student on 2015/04/17.
  */
-//@Entity
+@Entity
 public class SignInRequest implements Serializable {
-/*    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)*/
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long ID;
     private Date visitDate;
     private String reasonForVisit;
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "visitorId")
     private Visitor visitor;
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "securityId")
     private Security security;
     private String visit_code;
 

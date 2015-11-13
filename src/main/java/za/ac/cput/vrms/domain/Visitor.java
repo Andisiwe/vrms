@@ -1,12 +1,19 @@
 package za.ac.cput.vrms.domain;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
  * Created by student on 2015/04/17.
  */
+@Entity
 public class Visitor implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String ID_number;
