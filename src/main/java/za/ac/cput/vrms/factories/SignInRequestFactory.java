@@ -16,7 +16,9 @@ public class SignInRequestFactory {
                                                     Security security,
                                                     Date visitDate){
         SignInRequest signInRequest = new SignInRequest
-                .Builder(visitor,security)
+                .Builder()
+                .visitor(visitor)
+                .security(security)
                 .visitDate(visitDate)
                 .reasonForVisit(value.get("reason"))
                 .visit_code(value.get("code"))

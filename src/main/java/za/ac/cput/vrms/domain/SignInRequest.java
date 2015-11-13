@@ -17,7 +17,7 @@ public class SignInRequest implements Serializable {
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "visitorId")
     private Visitor visitor;
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.ALL , fetch = FetchType.EAGER)
     @JoinColumn(name = "securityId")
     private Security security;
     private String visit_code;
@@ -68,15 +68,16 @@ public class SignInRequest implements Serializable {
         private Security security;
         private String visit_code;
 
-        public Builder(Visitor visitor, Security security){
+        /*public Builder(Visitor visitor, Security security){
             this.security = security;
             this.visitor = visitor;
-        }
+        }*/
 
         public Builder ID(Long value){
             this.ID = value;
             return this;
         }
+
 
         public Builder visitDate(Date value){
             this.visitDate = value;
@@ -101,6 +102,7 @@ public class SignInRequest implements Serializable {
             return this;
         }
         public Builder copy(SignInRequest signInRequest){
+            this.ID = signInRequest.ID;
             this.visitor = signInRequest.visitor;
             this.visitDate = signInRequest.visitDate;
             this.reasonForVisit = signInRequest.reasonForVisit;

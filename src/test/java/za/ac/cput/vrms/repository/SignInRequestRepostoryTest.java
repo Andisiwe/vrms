@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import za.ac.cput.vrms.VarsityresidencemanagementsystemApplication;
 import za.ac.cput.vrms.domain.Security;
 import za.ac.cput.vrms.domain.SignInRequest;
+import za.ac.cput.vrms.domain.Visitor;
 import za.ac.cput.vrms.factories.SecurityFactory;
 import za.ac.cput.vrms.factories.SignInRequestFactory;
 
@@ -34,37 +35,47 @@ public class SignInRequestRepostoryTest extends AbstractTestNGSpringContextTests
         Map<String,String> value = new HashMap<String, String>();
         value.put("code","12345");
         value.put("reason","study");
-        Security security = SecurityFactory.createSecurity("Ngwenduna", "Yongama");
+        Security security = SecurityFactory.createSecurity("Hadebe", "Thulebona");
         Date date = new Date();
         SignInRequest signInRequest = SignInRequestFactory.createSignInRequest(value, null, security, date);
         requestRepository.save(signInRequest);
         id = signInRequest.getID();
         Assert.assertNotNull(id);
+        Assert.assertNotNull(signInRequest.getSecurity());
 
     }
 
     @Test(dependsOnMethods = "testCreate")
     public void testRead() throws Exception {
         SignInRequest signInRequest = requestRepository.findOne(id);
+        Security security = signInRequest.getSecurity();
         Assert.assertEquals("study", signInRequest.getReasonForVisit());
+        Assert.assertEquals("Thulebona",security.getFName());
 
     }
 
     @Test(dependsOnMethods = "testRead")
     public void testUpdate() throws Exception {
-      /*  City city = cityRepository.findOne(id);
-        City newCity = CityFactory.createCity("Cape Town", "8000");
-        cityRepository.save(newCity);
-        Assert.assertEquals("8000", newCity.getCode());*/
+        SignInRequest signInRequest = requestRepository.findOne(id);
+        Visitor visitor = new Visitor.Builder("112").firstName("Chuleza").lastName("mlonyeni").build();
+        SignInRequest newRequest = new SignInRequest.Builder()
+                .copy(signInRequest)
+                .visitor(visitor)
+                .visit_code("1123").build();
+        requestRepository.save(newRequest);
+
+        Assert.assertNull(signInRequest.getVisitor());
+        Assert.assertNotNull(newRequest.getVisitor());
+        Assert.assertTrue(newRequest.getVisit_code().equalsIgnoreCase("1123"));
+        Assert.assertTrue(signInRequest.getVisit_code().equals("12345"));
 
     }
 
     @Test(dependsOnMethods = "testUpdate")
     public void testDelete() throws Exception {
-      /*  City city = cityRepository.findOne(id);
-        cityRepository.delete(city);
-        City deletedCity = cityRepository.findOne(id);
-        Assert.assertNull(deletedCity);*/
-
+        SignInRequest signInRequest = requestRepository.findOne(id);
+        requestRepository.delete(signInRequest);
+        SignInRequest inRequest = requestRepository.findOne(id);
+        Assert.assertNull(inRequest);
     }
 }

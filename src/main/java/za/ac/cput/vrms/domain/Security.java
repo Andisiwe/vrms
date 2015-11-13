@@ -60,6 +60,7 @@ public class Security implements Serializable {
         }
 
         public Builder copy(Security security){
+            this.ID = security.ID;
             this.fName = security.fName;
             this.lName = security.lName;
             return this;

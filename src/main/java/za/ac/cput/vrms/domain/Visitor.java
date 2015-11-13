@@ -76,6 +76,7 @@ public class Visitor implements Serializable {
 
 
         public Builder copy(Visitor value){
+            this.id = value.id;
             this.ID_number = value.ID_number;
             this.firstName = value.firstName;
             this.lastName = value.lastName;

@@ -34,7 +34,7 @@ public class SignInRequestTest {
         Visitor visitor = new Visitor.Builder("112").build();
         Date date = new Date();
         SignInRequest signInRequest = SignInRequestFactory.createSignInRequest(value,null,security,date);
-        SignInRequest newsignInRequest = new SignInRequest.Builder(null,security).copy(signInRequest).visitor(visitor).build();
+        SignInRequest newsignInRequest = new SignInRequest.Builder().visitor(null).security(security).copy(signInRequest).visitor(visitor).build();
 
         Assert.assertNull(signInRequest.getVisitor());
         Assert.assertNotNull(newsignInRequest.getVisitor());
