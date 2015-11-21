@@ -29,6 +29,8 @@ public class ReserveRoomPage extends UI {
     HorizontalLayout  horizontalLayout2 = new  HorizontalLayout();
     VerticalLayout  verticalLayout = new VerticalLayout();
 
+    public ReserveRoomPage(){}
+
     @Autowired
     public ReserveRoomPage(CityService cityService, ResidenceService residenceService, RoomService roomService){
         this.cityService = cityService;
