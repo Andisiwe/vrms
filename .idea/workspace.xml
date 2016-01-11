@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4ea10b1-7947-48ca-97c6-98f865e3ff6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/forms/AddResidence.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/forms/ReadTables.java" />
-      <change type="DELETED" beforePath="C:\Users\Andies\Desktop\vrms\src\main\java\za\ac\cput\vrms\forms\ReserveRoomPage.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andies\Desktop\vrms\target\classes\za\ac\cput\vrms\forms\ReserveRoomPage.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/City$Builder.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/City$Builder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/City.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/City.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/CityService.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/CityService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/impl/CityServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/impl/CityServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vrms/services/CityServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vrms/services/CityServiceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/ResidenceService.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/ResidenceService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/impl/ResidenceServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/impl/ResidenceServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/RoomService.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/RoomService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/impl/RoomServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/services/impl/RoomServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/City.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/City.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/CityService.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/CityService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/impl/CityServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/impl/CityServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vrms/services/CityServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vrms/services/CityServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/ResidenceService.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/ResidenceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/impl/ResidenceServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/impl/ResidenceServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/RoomService.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/RoomService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/impl/RoomServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/impl/RoomServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.scss.cache" afterPath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.scss.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/forms/ReadTables.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/forms/ReadTables.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/forms/ReadTables.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/forms/ReadTables.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="varsityresidencemanagementsystem.iws" />
@@ -69,8 +46,8 @@
       <file leaf-file-name="ReadTables.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/forms/ReadTables.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7896104">
-              <caret line="120" column="11" selection-start-line="120" selection-start-column="11" selection-end-line="120" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.7279597">
+              <caret line="65" column="29" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -218,10 +195,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="736" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -751,9 +728,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Unknown" factoryName="Unknown">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -805,7 +779,7 @@
       <workItem from="1448120643848" duration="3912000" />
       <workItem from="1451212600168" duration="23950000" />
       <workItem from="1451663011427" duration="4234000" />
-      <workItem from="1452451502756" duration="2727000" />
+      <workItem from="1452451502756" duration="8355000" />
     </task>
     <task id="LOCAL-00001" summary="checkin domain classes security, sign_in_visitor, visitor">
       <created>1447303053220</created>
@@ -829,10 +803,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107558000" />
+    <option name="totallyTimeSpent" value="113186000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="736" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -843,12 +817,12 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34130782" sideWeight="0.8895613" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34108528" sideWeight="0.8895613" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31937984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1698813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16764276" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.64094955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31551978" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1261,8 +1235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/forms/ReadTables.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7896104">
-          <caret line="120" column="11" selection-start-line="120" selection-start-column="11" selection-end-line="120" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.7279597">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="29" />
           <folding />
         </state>
       </provider>

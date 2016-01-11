@@ -47,11 +47,11 @@ public class ReadTables extends UI {
     @Autowired
     public ReadTables(CityService cityService, ResidenceService residenceService, RoomService roomService){
         this.cityService = cityService;
-        this.cityGrid = new Grid();
+        this.cityGrid = new Grid("City");
         this.residenceService = residenceService;
-        this.residenceGrid = new Grid();
+        this.residenceGrid = new Grid("Residence");
         this.roomService = roomService;
-        this.roomGrid = new Grid();
+        this.roomGrid = new Grid("Room");
     }
 
     @Override
@@ -59,7 +59,7 @@ public class ReadTables extends UI {
         cityGrid.setContainerDataSource(new BeanItemContainer(City.class, cityService.findAll()));
         residenceGrid.setContainerDataSource(new BeanItemContainer(Residence.class, residenceService.findAll()));
         roomGrid.setContainerDataSource(new BeanItemContainer(Room.class, roomService.findAll()));
-
+        cityGrid.setColumnOrder("id","name","code");
         Label cityLabel = new Label("City");
         cityLabel.setStyleName("heading");
         Label resLabel = new Label("Residence");
@@ -112,19 +112,33 @@ public class ReadTables extends UI {
             Object selected = ((Grid.SingleSelectionModel)
                     cityGrid.getSelectionModel()).getSelectedRow();
 
-            if (selected != null)
-                Notification.show("Selected " +
-                        cityGrid.getContainerDataSource().getItem(selected)
-                                .getItemProperty("name"));
-            else
-                Notification.show("Nothing selected");
+            Notification.show("Selected " +
+                    cityGrid.getContainerDataSource().getItem(selected)
+                            .getItemProperty("name"));
+        });
+
+        residenceGrid.addSelectionListener(selectionEvent -> {
+            Object selectedRes = ((Grid.SingleSelectionModel)
+                    residenceGrid.getSelectionModel()).getSelectedRow();
+
+            Notification.show("Selected " +
+                    residenceGrid.getContainerDataSource().getItem(selectedRes)
+                            .getItemProperty("name"));
+        });
+
+        roomGrid.addSelectionListener(selectionEvent -> {
+            Object selectedRoom = ((Grid.SingleSelectionModel)
+                    roomGrid.getSelectionModel()).getSelectedRow();
+
+            Notification.show("Selected " +
+                    roomGrid.getContainerDataSource().getItem(selectedRoom)
+                            .getItemProperty("type"));
         });
 
         verticalLayout.addComponent(cityLayout);
         verticalLayout.addComponent(resLayout);
         verticalLayout.addComponent(roomLayout);
         setContent(verticalLayout);
-        //selectCity();
 
     }
 
