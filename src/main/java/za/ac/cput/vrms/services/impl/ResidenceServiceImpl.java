@@ -28,4 +28,24 @@ public class ResidenceServiceImpl implements ResidenceService{
 
         return residences;
     }
+
+    @Override
+    public Residence findById(Long id) {
+        return repository.findOne(id);
+    }
+
+    @Override
+    public Residence save(Residence entity) {
+        return repository.save(entity);
+    }
+
+    @Override
+    public Residence update(Residence entity) {
+        return repository.save(entity);
+    }
+
+    @Override
+    public void delete(Residence entity) {
+        repository.delete(entity);
+    }
 }

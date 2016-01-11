@@ -9,4 +9,12 @@ import java.util.List;
  */
 public interface ResidenceService {
     List<Residence> findAll();
+
+    Residence findById(Long id);
+
+    Residence save(Residence entity);
+
+    Residence update(Residence entity);
+
+    void delete(Residence entity);
 }

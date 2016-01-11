@@ -28,4 +28,24 @@ public class CityServiceImpl implements CityService {
 
         return cities;
     }
+
+    @Override
+    public City findById(Long id) {
+        return repository.findOne(id);
+    }
+
+    @Override
+    public City save(City entity) {
+        return repository.save(entity);
+    }
+
+    @Override
+    public City update(City entity) {
+        return repository.save(entity);
+    }
+
+    @Override
+    public void delete(City entity) {
+        repository.delete(entity);
+    }
 }

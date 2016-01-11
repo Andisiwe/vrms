@@ -9,4 +9,12 @@ import java.util.List;
  */
 public interface RoomService {
     List<Room> findAll();
+
+    Room findById(Long id);
+
+    Room save(Room entity);
+
+    Room update(Room entity);
+
+    void delete(Room entity);
 }

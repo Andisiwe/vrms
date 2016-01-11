@@ -34,6 +34,14 @@ public class City implements Serializable {
 
     public String getName(){ return name;}
 
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public static class Builder{
         private Long city_id;
         private String code;

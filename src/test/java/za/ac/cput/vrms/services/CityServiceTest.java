@@ -46,8 +46,8 @@ public class CityServiceTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testFindAll() throws Exception {
-        List<City> citiss = service.findAll();
-        Assert.assertNotNull(citiss);
+        List<City> cities = service.findAll();
+        Assert.assertNotNull(cities);
 
     }
 
