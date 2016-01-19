@@ -77,8 +77,10 @@ public class ReadTables extends UI {
         Button save = new Button("Save", this::saveCity);
         Button cancel = new Button("Cancel", this::cancel);
         Button update = new Button("Update", this::updateCity);
+        Button delete = new Button("Delete", this::deleteCity);
         cityForm.addComponent(save);
         cityForm.addComponent(update);
+        cityForm.addComponent(delete);
         cityForm.addComponent(cancel);
         cityLayout.addComponent(cityForm);
 
@@ -91,8 +93,10 @@ public class ReadTables extends UI {
         Button saveResi = new Button("Save", this::saveRes);
         Button cancelRes = new Button("Cancel", this::cancel);
         Button updateRes = new Button("Update", this::updateRes);
+        Button deleteRes = new Button("Delete", this::deleteRes);
         resForm.addComponent(saveResi);
         resForm.addComponent(updateRes);
+        resForm.addComponent(deleteRes);
         resForm.addComponent(cancelRes);
         resLayout.addComponent(resForm);
 
@@ -103,8 +107,10 @@ public class ReadTables extends UI {
         Button saveRoom = new Button("Save", this::saveRoom);
         Button cancelRoom = new Button("Cancel", this::cancel);
         Button updateRoom = new Button("Update", this::updateRoom);
+        Button deleteRoom = new Button("Delete", this::deleteRoom);
         roomForm.addComponent(saveRoom);
         roomForm.addComponent(updateRoom);
+        roomForm.addComponent(deleteRoom);
         roomForm.addComponent(cancelRoom);
         roomLayout.addComponent(roomForm);
 
@@ -268,6 +274,58 @@ public class ReadTables extends UI {
             roomService.update(updatedRoom);
 
             String msg = String.format("Updated room at ID '%s'.",
+                    room.getId());
+            Notification.show(msg, Notification.Type.TRAY_NOTIFICATION);
+
+        } catch (Exception e) {
+            e.getMessage();
+        }
+    }
+
+    public void deleteCity(Button.ClickEvent event) {
+        try {
+            String cityid = String.valueOf(cityGrid.getContainerDataSource().getItem(selected)
+                    .getItemProperty("id"));
+            Long id = Long.parseLong(cityid);
+            city = cityService.findById(id);
+
+            cityService.delete(city);
+            String msg = String.format("Delete city at ID '%s'.",
+                    city.getId());
+
+            Notification.show(msg, Notification.Type.TRAY_NOTIFICATION);
+
+        } catch (Exception e) {
+            e.getMessage();
+        }
+    }
+
+    public void deleteRes(Button.ClickEvent event) {
+        try {
+            String resId = String.valueOf(residenceGrid.getContainerDataSource().getItem(selectedRes)
+                    .getItemProperty("id"));
+            Long id = Long.parseLong(resId);
+            res = residenceService.findById(id);
+
+            residenceService.delete(res);
+            String msg = String.format("Deleted residence at ID '%s'.",
+                    res.getId());
+            Notification.show(msg, Notification.Type.TRAY_NOTIFICATION);
+
+        } catch (Exception e) {
+            e.getMessage();
+        }
+    }
+
+    public void deleteRoom(Button.ClickEvent event) {
+        try {
+            String roomId = String.valueOf(roomGrid.getContainerDataSource().getItem(selectedRoom)
+                    .getItemProperty("id"));
+            Long id = Long.parseLong(roomId);
+            room = roomService.findById(id);
+
+            roomService.delete(room);
+            String msg = String.format("Deleted room at ID '%s'.",
                     room.getId());
             Notification.show(msg, Notification.Type.TRAY_NOTIFICATION);
 

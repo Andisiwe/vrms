@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4ea10b1-7947-48ca-97c6-98f865e3ff6a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/City$Builder.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/City$Builder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/City.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/City.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/forms/ReadTables.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/forms/ReadTables.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/Room$Builder.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/Room$Builder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/Room.class" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vrms/domain/Room.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/City.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/City.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/forms/ReadTables.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/forms/ReadTables.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/Room.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/Room.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="varsityresidencemanagementsystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,38 +40,18 @@
       <file leaf-file-name="ReadTables.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/forms/ReadTables.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.456">
-              <caret line="265" column="31" selection-start-line="265" selection-start-column="31" selection-end-line="265" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.792">
+              <caret line="324" column="44" selection-start-line="324" selection-start-column="44" selection-end-line="324" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/factories/RoomFactory.java">
+      <file leaf-file-name="CityRepositoryTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vrms/repository/CityRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Room.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/Room.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="City.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/domain/City.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -249,6 +221,40 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="varsityresidencemanagementsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -291,36 +297,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="varsityresidencemanagementsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -793,7 +769,7 @@
       <workItem from="1451663011427" duration="4234000" />
       <workItem from="1452451502756" duration="8734000" />
       <workItem from="1452622173342" duration="4909000" />
-      <workItem from="1452926257643" duration="9155000" />
+      <workItem from="1452926257643" duration="10744000" />
     </task>
     <task id="LOCAL-00001" summary="checkin domain classes security, sign_in_visitor, visitor">
       <created>1447303053220</created>
@@ -817,7 +793,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127629000" />
+    <option name="totallyTimeSpent" value="129218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="736" extended-state="0" />
@@ -831,8 +807,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35725677" sideWeight="0.8895613" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31937984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35725677" sideWeight="0.8895613" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31897926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16913946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1170,16 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vrms/repository/CityRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="47" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/services/CityService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1244,10 +1210,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vrms/repository/CityRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vrms/forms/ReadTables.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.456">
-          <caret line="265" column="31" selection-start-line="265" selection-start-column="31" selection-end-line="265" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.792">
+          <caret line="324" column="44" selection-start-line="324" selection-start-column="44" selection-end-line="324" selection-end-column="44" />
           <folding />
         </state>
       </provider>
