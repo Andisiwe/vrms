@@ -58,6 +58,12 @@ public class Room implements Serializable {
             return this;
         }*/
 
+        public Builder copy(Room value){
+            this.room_id = value.room_id;
+            this.room_type = value.room_type;
+            return this;
+        }
+
         public Room build(){return new Room(this);}
     }
 

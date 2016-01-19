@@ -59,6 +59,14 @@ public class City implements Serializable {
             return this;
         }
 
+        public Builder copy(City value){
+            this.city_id = value.city_id;
+            this.name = value.name;
+            this.code = value.code;
+            return this;
+        }
+
+
         public City build(){ return new City(this);}
     }
 
